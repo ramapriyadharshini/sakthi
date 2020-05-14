@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport"content="width=device-width,initial-scale=1.0">
+        <!-- 
+            to link external css use link tag
+            to link external js use script tag with src=""
+         -->
+        <link href ="https://fonts.google.com/?category=Sans+Serif" rel="stylesheet">
+        
+        <title>resume</title>
+    </head>
+        <style>
+            h2{
+                font-family: sans-serif;
+            }
+            .header{
+                background-color: rgb(183, 43, 226);
+                height: 175px;
+                text-align: center;
+                color: crimson;
+                padding: 1px;
+            }
+    
+            #left-col , #right-col{
+                background-color:olive ;
+                width: 25%;
+                height: 75%;
+                float: left;
+            }
+            #center-col{
+                background-color:skyblue ;
+                width: 50%;
+                float: left;
+
+            }
+            .footer {
+                clear:both;
+                font-family: sans-serif;
+                background-color: rgb(183, 43, 226);
+                text-align: center;
+                height: 50px;
+                padding-top:  10px;
+                box-sizing: border-box;
+            }
+            .rounded img{
+    border-radius : 50%;
+    display:block;
+    float: right;
+
+}
+table,td,th{
+               border : 1px solid blueviolet
+           }
+        #left-col{
+            display:none;
+            background-color: steelblue;
+            color: thistle;
+        }
+        #center-col{
+            display:none;
+            background-color: turquoise;
+            color: palevioletred;
+            font-family: monospace;
+        }
+        #right-col{
+            display:none;
+            background-color: hotpink;
+            color: darkkhaki;
+            font-family: monospace;
+
+        }
+       
+    
+            
+    </style>
+        
+    <!-- 
+        innerHTML or innerText
+        console.log()
+        alert() 
+     -->
+    
+    <body>
+        <div class="header">
+        <form>
+        name : <input type="text"name="name"placeholder="your name here"><br>
+        mobile no : <input type="text"name="mobile"placeholder="phonenumber"><br>
+        email : <input type="text"name="email"placeholder="emailid"><br>
+        <div class = "rounded">
+        <img src="dhars.jpg"width="100px" height="100px" alin = right>
+        </form>
+        </div>
+        </div>
+        <button onclick="alert('Hello you have clicked')">Show alert</button>
+
+        <div id ="left-col">
+        <h2>qualification</h2>
+         <table>
+           <th>Degree</th>
+           <th>Year Of Completion</th>
+           <th>Name of college and school</th>
+           <th>percentage</th>
+                <tr>
+                  <td>BE CSE</td>
+                  <td>2020</td>
+                  <td>AIHT</td>
+                  <td>70</td>
+                </tr>
+                <tr>
+                  <td>XII</td>
+                  <td>2016</td>
+                  <td>MNRD</td>
+                  <td>75</td>
+                 </tr>
+                 <tr>
+                   <td>X</td>
+                   <td>2014</td>
+                   <td>MNRD</td>
+                   <td>93</td>
+                 </tr>
+             </table>
+
+             </div>
+
+             <div id ="center-col">
+                    <h2>knownledge</h2>
+                        <ul>
+                            <li>IDE : NETBEANS,ECLIPSE</li>
+                            <LI>LANGUAGES : C,C++</LI>
+                            <li>WEB DESIGN : HTML,CSS,JS</li>
+                
+                        </ul>
+                     <h3>TECHNICAL SKILLS</h3>
+                        <ol>
+                            <li>co-ordinate the symposiyum event in college</li>
+                            <li>participate in other college events<b>PAPER PRESENTATION , QUIZ,DEBUGGING</b></li>
+                            <li>completed mini projects on exam registration</li>
+                        </ol>
+                     <h4> ADDTIONAL SILKS</h4>
+                        <p id="para">
+                            Strong programming and analytical skills.
+                            posses good leader ship skills.
+                            quickly adaptable to any work environment.
+                            Ability to work both independently and in groups.
+                        </p>
+
+                 </div>
+                 <div id="right-col">
+                        <h2>personal details</h2> 
+                        <form>
+                            father's name : <input type="text"name="father_name" value><br>
+                            mother's name : <input type="text"name="id"value><br>
+                            DOB :<input type ="date"><br>
+                            address : <input type="text"name="id"value><br>
+                       </form>
+                 </div>
+                    
+                <div class ="footer">
+                    <h3>declaration</h3>
+        </div>
+        <button onclick="button1()">show div 1</button>
+        <button onclick="button2()">show div 2</button>
+        <button onclick="button3()">show div 3</button>
+        </body>
+   <script>
+             var element1 = document.getElementById("left-col")
+var element2 = document.getElementById("center-col")
+var element3 = document.getElementById("right-col")
+
+
+function button1(){
+   element1.style.display="block"
+   element2.style.display="none"
+   element3.style.display="none"
+}
+function button2() {
+   element1.style.display="none"
+   element2.style.display="block"
+   element3.style.display="none"
+}
+function button3() {
+   element1.style.display="none"
+   element2.style.display="none"
+   element3.style.display="block"
+}
+         </script> 
+        
+
+    
+    
+
+</html>
