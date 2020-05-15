@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>navbar</title>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet"href= "dhars.css">
+        <script src="https://kit.fontawesome.com/ao76d05399.js"></script>
+
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox"id="check">
+            <label for="check"class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <lable class ="logo">resume</lable>
+            <U1>
+                <li><a class="active"href = "#">qualification</a></li>
+                <li><a href = "#">knowledge</a></li>
+                <li><a href = "#">personal details</a></li>
+                
+            </U1>
+        </nav>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+                text-decoration: chocolate;
+                list-style: none;
+                box-sizing:border-box;
+            }
+            body{
+                font-family: monospace;
+            }
+            nav{
+                background-color: crimson;
+                height: 80px;
+
+            }
+            lable.logo{
+                color : white;
+                font-size: 35px;
+                line-height : 80px;
+                padding: 0 100px;
+                font-weight: bold;
+            }
+            nav u1{
+                float:right;
+                margin-right: 20px;
+            }
+            nav u1 li{
+                display:inline-block;
+                line-height :80px;
+                margin: 0 5px;
+            }
+            nav u1 li a{
+                color:white;
+                font-size: 17px;
+                padding:7px 13px;
+                border-radius: 3;
+                text-transform: uppercase;
+
+            }
+            a.active,a:hover{
+                background: yellowgreen;
+                transition: .5s;
+            }
+            .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            #check{
+                display: none;
+            }
+            @media(max-width: 952px){
+                lable.logo{
+                    font-size: 30px;
+                    padding-left: 50px;
+                    
+                }
+                nav u1 li a{
+                    font-size: 16px;
+
+                }
+            }
+            @media(max-width: 858px){
+                .checkbtn{
+                    display: block;
+                }
+                u1{
+                    position:fixed;
+                    width:100px;
+                    height: 100vh;
+                    background: #2c3e50;
+                    top:80px;
+                    left:-100%;
+                    text-align: center;
+                    transition:all.5s
+                }
+                nav u1 li{
+                    display:block
+                }
+                nav u1 li a{
+                    font-size: 20px;
+
+                }
+                a:hover,a.active{
+                    backround:none;
+                    color: slategrey;
+                }
+        </style>
+    </body>
+
+</html>

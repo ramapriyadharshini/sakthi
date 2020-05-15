@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport"content="width=device-width,initial-scale=1.0">
+         <title>formbuilder</title>
+         <style>
+             .button{
+                 color: #000;
+                 background-color: #fff;
+                 font-size: medium;
+                 padding: 12px;
+             }
+             .button:hover{
+                 color : white;
+                 background-color: #9b59b6;
+             }
+         </style>
+
+    </head>
+    <body>
+       <input type="text" name="username" id="user_id"><br>
+       <button id = "clo" hidden >click</button>
+     Radio Button: <input type="radio" id="myRadio">
+     
+     
+
+<button onclick="myFunction()">Try it</button><br>
+
+
+
+<!-- 
+    0. get the button by id
+    1. button when created must have ==> display : none
+    2. onfocus - button --visbible (display : block)
+    3. onblur - button --invisble (display:none)
+ -->
+<button onclick="myFunction1()">username</button>
+
+
+<button onclick="myFunction2()">emailid</button>
+
+
+<button class = "button"onclick="myFunction3()">password</button>
+
+
+
+<button class="button" onclick="myFunction4()">checkbox</button>
+
+
+<button onclick="myFunction5()">submit</button>
+<button id = "open">submit</button>
+
+
+
+
+Vcs -version control system
+
+
+  
+    </body>
+    <script type = "text/javascript">
+        
+        function myFunction() {
+  var x = document.getElementById("myRadio");
+  x.checked = true;
+        }
+          function myFunction1() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  x.setAttribute("id","hello")
+  x.setAttribute("value", "Hello World!");
+  document.body.appendChild(x);
+  } 
+function myFunction2() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "email");
+  x.setAttribute("value", "john@example.com");
+  document.body.appendChild(x);
+}
+function myFunction3() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "password");
+  x.setAttribute("value", "pswtext");
+  document.body.appendChild(x);
+}
+function myFunction4() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "checkbox");
+  document.body.appendChild(x);
+}
+                 
+function myFunction5() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "submit");
+  document.body.appendChild(x);
+}
+document.getElementById("user_id").addEventListener("focus", function(){
+    document.getElementById("clo").style.display = "block"
+
+}) 
+document.getElementById("user_id").addEventListener("blur",function(){
+    document.getElementById("clo").style.display = "none"
+})
+
+
+            
+
+        
+            
+    </script>
+</html>

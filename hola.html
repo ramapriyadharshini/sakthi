@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <div class="header">
+        <form>
+        name : <input type="text"name="name"placeholder="your name here"><br>
+        mobile no : <input type="text"name="mobile"placeholder="phonenumber"><br>
+        email : <input type="text"name="email"placeholder="emailid"><br>
+        <div class = "rounded">
+        <img src="dhars.jpg"width="100px" height="100px" alin = right>
+        </form>
+        </div>
+        </div>
+<div id="d1" style="display:none;"><h2>qualification</h2>
+    <table>
+      <th>Degree</th>
+      <th>Year Of Completion</th>
+      <th>Name of college and school</th>
+      <th>percentage</th>
+           <tr>
+             <td>BE CSE</td>
+             <td>2020</td>
+             <td>AIHT</td>
+             <td>70</td>
+           </tr>
+           <tr>
+             <td>XII</td>
+             <td>2016</td>
+             <td>MNRD</td>
+             <td>75</td>
+             </tr>
+             <tr>
+             <td>X</td>
+             <td>2014</td>
+                           <td>MNRD</td>
+                           <td>93</td>
+                       </tr>
+                       </table>
+
+               </div>
+<div id="d2" style="display:none;"><h2>knownledge</h2>
+    <ul>
+        <li>IDE : NETBEANS,ECLIPSE</li>
+        <LI>LANGUAGES : C,C++</LI>
+        <li>WEB DESIGN : HTML,CSS,JS</li>
+
+    </ul>
+    <h3>TECHNICAL SKILLS</h3>
+    <ol>
+        <li>co-ordinate the symposiyum event in college</li>
+        <li>participate in other college events<b>PAPER PRESENTATION , QUIZ,DEBUGGING</b></li>
+        <li>completed mini projects on exam registration</li>
+    </ol>
+    <h4> ADDTIONAL SILKS</h4>
+    <p id="para">
+        Strong programming and analytical skills.
+        posses good leader ship skills.
+        quickly adaptable to any work environment.
+        Ability to work both independently and in groups.
+    </p>
+</div>
+<div id="d3" style="display:none;"><h2>personal details</h2> 
+    <form>
+        father's name : <input type="text"name="id"value><br>
+        mother's name : <input type="text"name="id"value><br>
+        DOB :<input type ="date"><br>
+        address : <input type="text"name="id"value><br>
+   </form></div>
+<div id="d4" style="display:none;">D4 hey there I'm a alchemist</div>
+<div class ="footer">
+    <h3>declaration</h3>
+</div>
+<button onclick="button1()">D1 show</button>
+<button onclick="button2()">D2 show</button>
+<button onclick="button3()">D3 show</button>
+<button onclick="button4()">D4 show</button>
+<script>
+var d1 = document.getElementById("d1")
+var d2 = document.getElementById("d2")
+var d3 = document.getElementById("d3")
+var d4 = document.getElementById("d4")
+function button1(){
+d1.style.display="block"
+d2.style.display="none"
+d3.style.display="none"
+d4.style.display="none"
+
+}
+function button2(){
+    d1.style.display="none"
+d2.style.display="block"
+d3.style.display="none"
+d4.style.display="none"
+}function button3(){
+    d1.style.display="none"
+d2.style.display="none"
+d3.style.display="block"
+d4.style.display="none"
+}function button4(){
+    d1.style.display="none"
+d2.style.display="none"
+d3.style.display="none"
+d4.style.display="block"
+}
+</script>
+<style>
+    h2{
+        font-family: sans-serif;
+    }
+    .header{
+        background-color: rgb(183, 43, 226);
+        height: 175px;
+        text-align: center;
+        color: crimson;
+        padding: 1px;
+    }
+
+    #left-col , #right-col{
+        background-color:olive ;
+        width: 25%;
+        height: 75%;
+        float: left;
+    }
+    #center-col{
+        background-color:skyblue ;
+        width: 50%;
+        float: left;
+
+    }
+    .footer {
+        clear:both;
+        font-family: sans-serif;
+        background-color: rgb(183, 43, 226);
+        text-align: center;
+        height: 50px;
+        padding-top:  10px;
+        box-sizing: border-box;
+    }
+    .rounded img{
+border-radius : 50%;
+display:block;
+float: right;
+
+}
+table,td,th{
+       border : 1px solid blueviolet
+   }
+#left-col{
+    display:none;
+    background-color: steelblue;
+    color: thistle;
+}
+#center-col{
+    display:none;
+    background-color: turquoise;
+    color: palevioletred;
+    font-family: monospace;
+}
+#right-col{
+    display:none;
+    background-color: hotpink;
+    color: darkkhaki;
+    font-family: monospace;
+
+}
+
+
+    
+</style>
+</body>
+</html>
